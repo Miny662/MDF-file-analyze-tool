@@ -53,15 +53,17 @@ else
     exit 1
 fi
 
-# Créer le dossier de sortie
-echo "📁 Création du dossier de sortie..."
+# Créer les dossiers nécessaires
+echo "📁 Création des dossiers nécessaires..."
 mkdir -p eva_reports
-echo "✅ Dossier eva_reports créé"
+mkdir -p uploads
+mkdir -p templates
+echo "✅ Dossiers créés"
 
 # Vérifier l'installation
 echo ""
 echo "🔍 Vérification de l'installation..."
-python3 -c "import asammdf, docx, matplotlib, pandas; print('✅ Tous les modules sont installés correctement')"
+python3 -c "import asammdf, docx, matplotlib, pandas, flask; print('✅ Tous les modules sont installés correctement')"
 
 if [ $? -eq 0 ]; then
     echo ""
@@ -69,10 +71,18 @@ if [ $? -eq 0 ]; then
     echo "      ✅ INSTALLATION TERMINÉE AVEC SUCCÈS     "
     echo "================================================"
     echo ""
-    echo "📖 Pour utiliser le générateur :"
+    echo "================================================"
+    echo "              📖 MODES D'UTILISATION"
+    echo "================================================"
+    echo ""
+    echo "1. 🌐 INTERFACE WEB (RECOMMANDÉ) :"
+    echo "   python3 app.py"
+    echo "   Puis ouvrir : http://localhost:5000"
+    echo ""
+    echo "2. 💻 LIGNE DE COMMANDE :"
     echo "   python3 generate_eva_report_exact_template.py --help"
     echo ""
-    echo "📊 Exemple :"
+    echo "📊 Exemple ligne de commande :"
     echo "   python3 generate_eva_report_exact_template.py \\"
     echo "     --mdf tina/Roulage.mdf \\"
     echo "     --sweet 400 \\"
@@ -81,6 +91,28 @@ if [ $? -eq 0 ]; then
     if [ -d "venv_eva" ]; then
         echo "⚠️  N'oubliez pas d'activer l'environnement virtuel :"
         echo "   source venv_eva/bin/activate"
+    fi
+    echo ""
+    echo "================================================"
+    echo "              🚀 LANCER LE SERVEUR ?"
+    echo "================================================"
+    echo ""
+    read -p "Voulez-vous lancer le serveur web maintenant ? [O/n] " -n 1 -r
+    echo ""
+    if [[ ! $REPLY =~ ^[Nn]$ ]]; then
+        echo ""
+        echo "🚀 Lancement du serveur web..."
+        echo "Ouvrez votre navigateur et allez sur : http://localhost:5000"
+        echo ""
+        echo "Pour arrêter le serveur : Appuyez sur Ctrl+C"
+        echo ""
+        python3 app.py
+    else
+        echo ""
+        echo "📝 Pour lancer le serveur plus tard :"
+        echo "   python3 app.py"
+        echo ""
+        echo "Puis ouvrir : http://localhost:5000"
     fi
     echo ""
 else

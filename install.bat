@@ -56,15 +56,17 @@ if %errorlevel% equ 0 (
     exit /b 1
 )
 
-REM Créer le dossier de sortie
-echo Creation du dossier de sortie...
+REM Créer les dossiers nécessaires
+echo Creation des dossiers necessaires...
 if not exist eva_reports mkdir eva_reports
-echo OK Dossier eva_reports cree
+if not exist uploads mkdir uploads
+if not exist templates mkdir templates
+echo OK Dossiers crees
 
 REM Vérifier l'installation
 echo.
 echo Verification de l'installation...
-python -c "import asammdf, docx, matplotlib, pandas; print('OK Tous les modules sont installes correctement')"
+python -c "import asammdf, docx, matplotlib, pandas, flask; print('OK Tous les modules sont installes correctement')"
 
 if %errorlevel% equ 0 (
     echo.
@@ -72,10 +74,18 @@ if %errorlevel% equ 0 (
     echo       INSTALLATION TERMINEE AVEC SUCCES     
     echo ================================================
     echo.
-    echo Pour utiliser le generateur :
+    echo ================================================
+    echo              MODES D'UTILISATION
+    echo ================================================
+    echo.
+    echo 1. INTERFACE WEB (RECOMMANDE) :
+    echo    python app.py
+    echo    Puis ouvrir : http://localhost:5000
+    echo.
+    echo 2. LIGNE DE COMMANDE :
     echo    python generate_eva_report_exact_template.py --help
     echo.
-    echo Exemple :
+    echo Exemple ligne de commande :
     echo    python generate_eva_report_exact_template.py ^
     echo      --mdf tina\Roulage.mdf ^
     echo      --sweet 400 ^
@@ -84,6 +94,27 @@ if %errorlevel% equ 0 (
     if exist venv_eva (
         echo N'oubliez pas d'activer l'environnement virtuel :
         echo    venv_eva\Scripts\activate.bat
+    )
+    echo.
+    echo ================================================
+    echo              LANCER LE SERVEUR ?
+    echo ================================================
+    echo.
+    set /p START_SERVER="Voulez-vous lancer le serveur web maintenant ? [O/n] "
+    if /i "%START_SERVER%" neq "n" (
+        echo.
+        echo Lancement du serveur web...
+        echo Ouvrez votre navigateur et allez sur : http://localhost:5000
+        echo.
+        echo Pour arreter le serveur : Appuyez sur Ctrl+C
+        echo.
+        python app.py
+    ) else (
+        echo.
+        echo Pour lancer le serveur plus tard :
+        echo    python app.py
+        echo.
+        echo Puis ouvrir : http://localhost:5000
     )
     echo.
 ) else (
