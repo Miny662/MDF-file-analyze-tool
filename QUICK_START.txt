@@ -1,0 +1,16 @@
+=== DÉMARRAGE RAPIDE ===
+
+1. INSTALLATION (première fois seulement)
+   Windows : Double-cliquez sur install.bat
+   Linux/Mac : ./install.sh
+
+2. UTILISATION
+   python generate_eva_report_exact_template.py --mdf <fichier.mdf> --sweet 400 --myfx all
+
+3. EXEMPLE
+   python generate_eva_report_exact_template.py --mdf tina/exemple.mdf --sweet 400 --myfx all
+
+4. RÉSULTAT
+   Le rapport sera généré dans : eva_reports/
+
+Pour plus d'informations, consultez README_CLIENT.md

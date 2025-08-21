@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA Report Generator - Web Interface</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .upload-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 20px;
+            padding: 35px;
+            margin-bottom: 30px;
+            border: 2px dashed #dee2e6;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .upload-section:hover {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f0f2ff 0%, #e8ecff 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.15);
+        }
+
+        .upload-section h2 {
+            margin-bottom: 25px;
+            color: #2c3e50;
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .file-input-wrapper {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .custom-file-input {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .custom-file-input input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            pointer-events: none;
+        }
+
+        .file-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            min-width: 180px;
+            justify-content: center;
+        }
+
+        .file-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+        }
+
+        .file-button:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .file-icon {
+            font-size: 18px;
+        }
+
+        .file-text {
+            font-weight: 600;
+        }
+
+        .file-name {
+            flex: 1;
+            padding: 16px 20px;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            color: #6c757d;
+            font-size: 14px;
+            min-height: 52px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .file-name.has-file {
+            color: #28a745;
+            border-color: #28a745;
+            background: #f8fff9;
+        }
+
+        .file-label {
+            display: block;
+            margin-bottom: 12px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+            background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+        }
+
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+
+        .submit-btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 25px 0;
+            padding: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loading p {
+            color: #6c757d;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        .result-section {
+            display: none;
+            border-radius: 16px;
+            padding: 25px;
+            margin-top: 25px;
+            border: none;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-section.success {
+            background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+            color: #155724;
+            border-left: 5px solid #28a745;
+        }
+
+        .result-section.error {
+            background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+            color: #721c24;
+            border-left: 5px solid #dc3545;
+        }
+
+        .result-section h3 {
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .result-section p {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            margin-top: 20px;
+            margin-right: 15px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .download-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+
+        .download-btn:last-child {
+            background: #17a2b8;
+            box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+        }
+
+        .download-btn:last-child:hover {
+            background: #138496;
+            box-shadow: 0 8px 25px rgba(23, 162, 184, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                margin: 0;
+                border-radius: 20px;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            .upload-section {
+                padding: 25px;
+            }
+
+            .custom-file-input {
+                flex-direction: column;
+                gap: 15px;
+                align-items: stretch;
+            }
+
+            .file-button {
+                min-width: auto;
+                justify-content: center;
+            }
+
+            .header h1 {
+                font-size: 2.2em;
+            }
+
+            .header p {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 20px;
+            }
+
+            .upload-section {
+                padding: 20px;
+            }
+
+            .submit-btn {
+                padding: 16px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>EVA Report Generator</h1>
+            <p>Generate comprehensive EVA reports from MDF files with web interface</p>
+        </div>
+
+        <div class="content">
+            <div class="upload-section">
+                <h2>Upload MDF File</h2>
+
+                <form id="uploadForm" enctype="multipart/form-data">
+                    <div class="file-input-wrapper">
+                        <label for="mdf_file" class="file-label">Select MDF File:</label>
+
+                        <div class="custom-file-input">
+                            <input type="file" id="mdf_file" name="mdf_file" accept=".mdf" required>
+                            <label for="mdf_file" class="file-button">
+                                <span class="file-icon">📁</span>
+                                <span class="file-text">Choose MDF File</span>
+                            </label>
+                            <div class="file-name" id="fileName">No file selected</div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Generate EVA Report
+                    </button>
+                </form>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Generating report... This may take a few minutes.</p>
+                </div>
+
+                <div class="result-section" id="resultSection"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle file selection display
+        document.getElementById('mdf_file').addEventListener('change', function (e) {
+            const fileName = e.target.files[0]?.name || 'No file selected';
+            const fileNameElement = document.getElementById('fileName');
+            fileNameElement.textContent = fileName;
+
+            if (e.target.files[0]) {
+                fileNameElement.classList.add('has-file');
+            } else {
+                fileNameElement.classList.remove('has-file');
+            }
+        });
+
+        document.getElementById('uploadForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const submitBtn = document.getElementById('submitBtn');
+            const loading = document.getElementById('loading');
+            const resultSection = document.getElementById('resultSection');
+
+            // Show loading state
+            submitBtn.disabled = true;
+            loading.style.display = 'block';
+            resultSection.style.display = 'none';
+
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    resultSection.className = 'result-section success';
+                    resultSection.innerHTML = `
+                        <h3>Report Generated Successfully!</h3>
+                        <p><strong>File:</strong> ${result.uploaded_file}</p>
+                        <p><strong>Report:</strong> ${result.report_filename}</p>
+                        <a href="/download/${result.report_filename}" class="download-btn">Download Report</a>
+                        <a href="/view/${result.report_filename}" target="_blank" class="download-btn" style="background: #17a2b8; margin-left: 10px;">View Report</a>
+                    `;
+                } else {
+                    resultSection.className = 'result-section error';
+                    resultSection.innerHTML = `
+                        <h3>Error</h3>
+                        <p>${result.message}</p>
+                    `;
+                }
+
+                resultSection.style.display = 'block';
+
+            } catch (error) {
+                resultSection.className = 'result-section error';
+                resultSection.innerHTML = `
+                    <h3>Network Error</h3>
+                    <p>Failed to connect to server. Please try again.</p>
+                `;
+                resultSection.style.display = 'block';
+            } finally {
+                // Reset form and buttons
+                submitBtn.disabled = false;
+                loading.style.display = 'none';
+                document.getElementById('uploadForm').reset();
+            }
+        });
+    </script>
+</body>
+
+</html>

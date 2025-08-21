@@ -1,0 +1,3352 @@
+{
+  "metadata": {
+    "generated_from": "/Users/philippe/Downloads/test-codeur/tina/labels_uc_analysis_complete.json",
+    "generation_date": "2025-08-20T20:05:06.355433",
+    "framework_version": "1.0",
+    "description": "Framework de détection UC basé sur méthode des booléens"
+  },
+  "signal_registry": {
+    "VehicleStates": {
+      "internal_id": "A37",
+      "canonical_name": "VehicleStates",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PowerRelayState": {
+      "internal_id": "A337",
+      "canonical_name": "PowerRelayState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HEVC_WakeUpSleepCommand": {
+      "internal_id": "A16",
+      "canonical_name": "HEVC_WakeUpSleepCommand",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS2_RefusetoSleep": {
+      "internal_id": "A4",
+      "canonical_name": "BMS2_RefusetoSleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_RefusetoSleep": {
+      "internal_id": "A5",
+      "canonical_name": "BMS_RefusetoSleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDC_RefusetoSleep": {
+      "internal_id": "A6",
+      "canonical_name": "DCDC_RefusetoSleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_RefusetoSleep": {
+      "internal_id": "A7",
+      "canonical_name": "HSG_RefusetoSleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_RefuseToSleep": {
+      "internal_id": "A8",
+      "canonical_name": "ME_RefuseToSleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V_WakeUpSleepCommand": {
+      "internal_id": "A42",
+      "canonical_name": "V_WakeUpSleepCommand",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HEVC_Refuse_to_Sleep": {
+      "internal_id": "A43",
+      "canonical_name": "HEVC_Refuse_to_Sleep",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CustomerApproachDetected": {
+      "internal_id": "A11",
+      "canonical_name": "CustomerApproachDetected",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WakeUpType": {
+      "internal_id": "A39",
+      "canonical_name": "WakeUpType",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PushtoStartButton": {
+      "internal_id": "A18",
+      "canonical_name": "PushtoStartButton",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BrakePedalPressedByDriver": {
+      "internal_id": "A19",
+      "canonical_name": "BrakePedalPressedByDriver",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "StartingMode_BCM": {
+      "internal_id": "A20",
+      "canonical_name": "StartingMode_BCM",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "VehicleSpeed": {
+      "internal_id": "A22",
+      "canonical_name": "VehicleSpeed",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargingPlugConnected_v2": {
+      "internal_id": "A149",
+      "canonical_name": "ChargingPlugConnected_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGcontrolPilotState": {
+      "internal_id": "A46",
+      "canonical_name": "CHGcontrolPilotState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGStateRequest_v2": {
+      "internal_id": "A26",
+      "canonical_name": "CHGStateRequest_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGLoadState": {
+      "internal_id": "A29",
+      "canonical_name": "CHGLoadState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVbatteryChargeType_v2": {
+      "internal_id": "A181",
+      "canonical_name": "HVbatteryChargeType_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BCM_PresoakRequest": {
+      "internal_id": "A31",
+      "canonical_name": "BCM_PresoakRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HEVC_PresoakRequest": {
+      "internal_id": "A32",
+      "canonical_name": "HEVC_PresoakRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HEVC_PresoakActivationStatus": {
+      "internal_id": "A35",
+      "canonical_name": "HEVC_PresoakActivationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PresoakProg_HVACmode": {
+      "internal_id": "A343",
+      "canonical_name": "PresoakProg_HVACmode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ControlPilot_Dutycycle_EVA": {
+      "internal_id": "A140",
+      "canonical_name": "ControlPilot_Dutycycle_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVchargeHLCRequest_v2": {
+      "internal_id": "A47",
+      "canonical_name": "Combo_EVchargeHLCRequest_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEchargeHLCState_v2": {
+      "internal_id": "A48",
+      "canonical_name": "Combo_EVSEchargeHLCState_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Signals": {
+      "internal_id": "A49",
+      "canonical_name": "Signals",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_HVNetworkVoltage_BLMS": {
+      "internal_id": "A188",
+      "canonical_name": "BMS_HVNetworkVoltage_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_HVNetworkVoltage_v2": {
+      "internal_id": "A51",
+      "canonical_name": "BMS_HVNetworkVoltage_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterHVNetworkVoltage_BLMS": {
+      "internal_id": "A53",
+      "canonical_name": "ME_InverterHVNetworkVoltage_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "InverterHVNetworkVoltage": {
+      "internal_id": "A54",
+      "canonical_name": "InverterHVNetworkVoltage",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PowerRelayState_BLMS": {
+      "internal_id": "A336",
+      "canonical_name": "PowerRelayState_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCHVNetworkVoltage_EVA": {
+      "internal_id": "A58",
+      "canonical_name": "DCDCHVNetworkVoltage_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCHVNetworkVoltage_V2": {
+      "internal_id": "A59",
+      "canonical_name": "DCDCHVNetworkVoltage_V2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVbatInstantCurrent_BLMS_v2": {
+      "internal_id": "A61",
+      "canonical_name": "HVbatInstantCurrent_BLMS_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatInstantCurrent_v3": {
+      "internal_id": "A187",
+      "canonical_name": "HVBatInstantCurrent_v3",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVIsolationImpedance_BLMS": {
+      "internal_id": "A64",
+      "canonical_name": "HVIsolationImpedance_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVIsolationImpedance_RCY": {
+      "internal_id": "A65",
+      "canonical_name": "HVIsolationImpedance_RCY",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "NumHVbattRelaysOpening_BLMS": {
+      "internal_id": "A138",
+      "canonical_name": "NumHVbattRelaysOpening_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vnx_hv_cnt_ctr": {
+      "internal_id": "A68",
+      "canonical_name": "Vnx_hv_cnt_ctr",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterCurrent_BLMS_v2": {
+      "internal_id": "A372",
+      "canonical_name": "ME_InverterCurrent_BLMS_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterCurrent": {
+      "internal_id": "A371",
+      "canonical_name": "ME_InverterCurrent",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterCurrent_BLMS_v2": {
+      "internal_id": "A410",
+      "canonical_name": "HSG_InverterCurrent_BLMS_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterCurrent_v2": {
+      "internal_id": "A409",
+      "canonical_name": "HSG_InverterCurrent_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCCurrentOutput_BLMS": {
+      "internal_id": "A74",
+      "canonical_name": "DCDCCurrentOutput_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCCurrentOutput": {
+      "internal_id": "A75",
+      "canonical_name": "DCDCCurrentOutput",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "AllowedBatteryPower_BLMS": {
+      "internal_id": "A76",
+      "canonical_name": "AllowedBatteryPower_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_hvb_avl_dchg_pow_hevc_gw_trsm": {
+      "internal_id": "A77",
+      "canonical_name": "Vxx_hvb_avl_dchg_pow_hevc_gw_trsm",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCInputPower_EVA": {
+      "internal_id": "A79",
+      "canonical_name": "DCDCInputPower_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCDCInputPower": {
+      "internal_id": "A80",
+      "canonical_name": "DCDCInputPower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_FaultType_BLMS": {
+      "internal_id": "A82",
+      "canonical_name": "BMS_FaultType_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_FaultType": {
+      "internal_id": "A83",
+      "canonical_name": "BMS_FaultType",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatterySOC_BLMS": {
+      "internal_id": "A247",
+      "canonical_name": "HVBatterySOC_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatterySOC_HV": {
+      "internal_id": "A246",
+      "canonical_name": "HVBatterySOC_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS2_FaultType_BLMS": {
+      "internal_id": "A87",
+      "canonical_name": "BMS2_FaultType_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS2_FaultType": {
+      "internal_id": "A88",
+      "canonical_name": "BMS2_FaultType",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineWorkingMode_BLMS": {
+      "internal_id": "A232",
+      "canonical_name": "ME_ElecMachineWorkingMode_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ElecMAchineWorkingMode": {
+      "internal_id": "A92",
+      "canonical_name": "ElecMAchineWorkingMode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "AuxConsumption_LastTrip": {
+      "internal_id": "A93",
+      "canonical_name": "AuxConsumption_LastTrip",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_aux_cum_cons_last_trp_100ms": {
+      "internal_id": "A94",
+      "canonical_name": "Vxx_aux_cum_cons_last_trp_100ms",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TotalConsumption_LastTrip": {
+      "internal_id": "A95",
+      "canonical_name": "TotalConsumption_LastTrip",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_cum_cons_last_trp_100ms": {
+      "internal_id": "A96",
+      "canonical_name": "Vxx_cum_cons_last_trp_100ms",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "MotorEnableRequest": {
+      "internal_id": "A97",
+      "canonical_name": "MotorEnableRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DistanceTotalizer": {
+      "internal_id": "A345",
+      "canonical_name": "DistanceTotalizer",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatResistiveStateOfHealth_BLMS": {
+      "internal_id": "A273",
+      "canonical_name": "HVBatResistiveStateOfHealth_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_OverVoltageAlert": {
+      "internal_id": "A100",
+      "canonical_name": "HVB_OverVoltageAlert",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_UnderVoltageAlert": {
+      "internal_id": "A101",
+      "canonical_name": "HVB_UnderVoltageAlert",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PreConditioningBattery_HVACmode": {
+      "internal_id": "A339",
+      "canonical_name": "PreConditioningBattery_HVACmode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BusbarUnscrewingAlert": {
+      "internal_id": "A289",
+      "canonical_name": "BusbarUnscrewingAlert",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HeatingGridCurrentRequest_Data": {
+      "internal_id": "A104",
+      "canonical_name": "HeatingGridCurrentRequest_Data",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TiAlertDisplay_Data": {
+      "internal_id": "A105",
+      "canonical_name": "TiAlertDisplay_Data",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryPressure_Data": {
+      "internal_id": "A106",
+      "canonical_name": "HVBatteryPressure_Data",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "StateOfCertifiedEnergy_v2": {
+      "internal_id": "A107",
+      "canonical_name": "StateOfCertifiedEnergy_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "StateOfCertifiedRange_v2": {
+      "internal_id": "A108",
+      "canonical_name": "StateOfCertifiedRange_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2X_HVBat_EnergyDurabilityCount": {
+      "internal_id": "A109",
+      "canonical_name": "V2X_HVBat_EnergyDurabilityCount",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_TotalChargedEnergy_Data": {
+      "internal_id": "A110",
+      "canonical_name": "V2G_TotalChargedEnergy_Data",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "NumACchargeStarts_BLMS": {
+      "internal_id": "A111",
+      "canonical_name": "NumACchargeStarts_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryPressure_EVA": {
+      "internal_id": "A112",
+      "canonical_name": "HVBatteryPressure_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_TotalChargedEnergy_EVA": {
+      "internal_id": "A113",
+      "canonical_name": "V2G_TotalChargedEnergy_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_TotalDischargedEnergy_EVA": {
+      "internal_id": "A114",
+      "canonical_name": "V2G_TotalDischargedEnergy_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2L_TotalDischargedEnergy_EVA": {
+      "internal_id": "A115",
+      "canonical_name": "V2L_TotalDischargedEnergy_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVInputPowerAvailableFromBattery": {
+      "internal_id": "A330",
+      "canonical_name": "HVInputPowerAvailableFromBattery",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WarmUpRequest_EVA": {
+      "internal_id": "A292",
+      "canonical_name": "WarmUpRequest_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CumulatedBalancingTime": {
+      "internal_id": "A332",
+      "canonical_name": "CumulatedBalancingTime",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CumulatedCapacityBalanced": {
+      "internal_id": "A334",
+      "canonical_name": "CumulatedCapacityBalanced",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryCoolingLoopTemperature": {
+      "internal_id": "A251",
+      "canonical_name": "HVBatteryCoolingLoopTemperature",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "VehicleAutonomyZEVdisplay": {
+      "internal_id": "A349",
+      "canonical_name": "VehicleAutonomyZEVdisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatHealth_Algo_EVA": {
+      "internal_id": "A122",
+      "canonical_name": "HVBatHealth_Algo_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatHealth_Model_EVA": {
+      "internal_id": "A123",
+      "canonical_name": "HVBatHealth_Model_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Ztx_v2x_mtrx : V2G or V2L mode matrix ($92D2)": {
+      "internal_id": "A124",
+      "canonical_name": "Ztx_v2x_mtrx : V2G or V2L mode matrix ($92D2)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "NumDCchargRelayOpening_BLMS": {
+      "internal_id": "A125",
+      "canonical_name": "NumDCchargRelayOpening_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Ztx_drv_cs_mtrx : Charge Sustaining Driving history (T°Max/BSOC) ($91FF)": {
+      "internal_id": "A126",
+      "canonical_name": "Ztx_drv_cs_mtrx : Charge Sustaining Driving history (T°Max/BSOC) ($91FF)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_kwh_dch_cs : Cumulated energy in discharge : CS mode ($9244)": {
+      "internal_id": "A127",
+      "canonical_name": "Zxx_kwh_dch_cs : Cumulated energy in discharge : CS mode ($9244)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_kwh_dch_v2x : SumOfKWhDischargedV2X ($92D3)": {
+      "internal_id": "A128",
+      "canonical_name": "Zxx_kwh_dch_v2x : SumOfKWhDischargedV2X ($92D3)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCcharge_NextStationTimeArrival": {
+      "internal_id": "A129",
+      "canonical_name": "DCcharge_NextStationTimeArrival",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BatteryWatterTempActivationReq": {
+      "internal_id": "A130",
+      "canonical_name": "BatteryWatterTempActivationReq",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WaterBatteryTempTarget": {
+      "internal_id": "A131",
+      "canonical_name": "WaterBatteryTempTarget",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "SOCPredictedAtQCStation": {
+      "internal_id": "A132",
+      "canonical_name": "SOCPredictedAtQCStation",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ERP_ActivationStatus": {
+      "internal_id": "A133",
+      "canonical_name": "ERP_ActivationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_sohe_rsa_sohr : SOHE RSA model last update value ($9295)": {
+      "internal_id": "A134",
+      "canonical_name": "Zxx_sohe_rsa_sohr : SOHE RSA model last update value ($9295)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_abs_time_sohr :  Absolute Vehicle Time saved saved at sleeping($9296)": {
+      "internal_id": "A135",
+      "canonical_name": "Zxx_abs_time_sohr :  Absolute Vehicle Time saved saved at sleeping($9296)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "|||\n|||": {
+      "internal_id": "A136",
+      "canonical_name": "|||\n|||",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "OperatingTypeStatus_BLMS": {
+      "internal_id": "A313",
+      "canonical_name": "OperatingTypeStatus_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "SC_TargetSOC_EVA": {
+      "internal_id": "A139",
+      "canonical_name": "SC_TargetSOC_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DetLogic_maxcurrent_EVA": {
+      "internal_id": "A141",
+      "canonical_name": "DetLogic_maxcurrent_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "MainsRMSVoltage_EVA": {
+      "internal_id": "A142",
+      "canonical_name": "MainsRMSVoltage_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "MainsRMSCurrent_EVA": {
+      "internal_id": "A143",
+      "canonical_name": "MainsRMSCurrent_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ProgrammedChargeStatus_HEVC": {
+      "internal_id": "A200",
+      "canonical_name": "ProgrammedChargeStatus_HEVC",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargeAuthorization_BCM_v2": {
+      "internal_id": "A145",
+      "canonical_name": "ChargeAuthorization_BCM_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "InstantChargingApparentPower": {
+      "internal_id": "A146",
+      "canonical_name": "InstantChargingApparentPower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CustomerDepartureTime_EVA": {
+      "internal_id": "A147",
+      "canonical_name": "CustomerDepartureTime_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCchargeInletTemp_BLMS": {
+      "internal_id": "A148",
+      "canonical_name": "DCchargeInletTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargeSpotPowerLevel": {
+      "internal_id": "A150",
+      "canonical_name": "ChargeSpotPowerLevel",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "NumDCchargRelayOpenWithCurr_BLMS": {
+      "internal_id": "A151",
+      "canonical_name": "NumDCchargRelayOpenWithCurr_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEPresentVoltage": {
+      "internal_id": "A152",
+      "canonical_name": "Combo_EVSEPresentVoltage",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEPresentCurrent": {
+      "internal_id": "A153",
+      "canonical_name": "Combo_EVSEPresentCurrent",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEMaximumVoltageLimit": {
+      "internal_id": "A154",
+      "canonical_name": "Combo_EVSEMaximumVoltageLimit",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEMinimumVoltageLimit": {
+      "internal_id": "A155",
+      "canonical_name": "Combo_EVSEMinimumVoltageLimit",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEchargeHLCState": {
+      "internal_id": "A156",
+      "canonical_name": "Combo_EVSEchargeHLCState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CPLC_CommunicationStatus": {
+      "internal_id": "A157",
+      "canonical_name": "CPLC_CommunicationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CPLC_FaultType": {
+      "internal_id": "A158",
+      "canonical_name": "CPLC_FaultType",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "DCCharge_EVTargetCurrent": {
+      "internal_id": "A159",
+      "canonical_name": "DCCharge_EVTargetCurrent",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVReady": {
+      "internal_id": "A160",
+      "canonical_name": "Combo_EVReady",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVchargeHLCRequest": {
+      "internal_id": "A161",
+      "canonical_name": "Combo_EVchargeHLCRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVErrorCode": {
+      "internal_id": "A162",
+      "canonical_name": "Combo_EVErrorCode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEMaximumPowerLimit_v2": {
+      "internal_id": "A163",
+      "canonical_name": "Combo_EVSEMaximumPowerLimit_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CPLC_RequestedEnergyTransferMode": {
+      "internal_id": "A164",
+      "canonical_name": "CPLC_RequestedEnergyTransferMode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEMaximumCurrentLimit_v2 ( for (sweet 400)": {
+      "internal_id": "A165",
+      "canonical_name": "Combo_EVSEMaximumCurrentLimit_v2 ( for (sweet 400)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEMaximumCurrentLimit ( for swett 200)": {
+      "internal_id": "A166",
+      "canonical_name": "Combo_EVSEMaximumCurrentLimit ( for swett 200)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Combo_EVSEPresentCurrent_v2": {
+      "internal_id": "A167",
+      "canonical_name": "Combo_EVSEPresentCurrent_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleDefinitionStatus": {
+      "internal_id": "A168",
+      "canonical_name": "EVSEscheduleDefinitionStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleDefNumberSlots": {
+      "internal_id": "A169",
+      "canonical_name": "EVSEscheduleDefNumberSlots",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleForSlotxPower": {
+      "internal_id": "A170",
+      "canonical_name": "EVSEscheduleForSlotxPower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleforSlotxRelativeCost": {
+      "internal_id": "A171",
+      "canonical_name": "EVSEscheduleforSlotxRelativeCost",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleforSlotxDuration": {
+      "internal_id": "A172",
+      "canonical_name": "EVSEscheduleforSlotxDuration",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVChargingProfileStatus": {
+      "internal_id": "A173",
+      "canonical_name": "EVChargingProfileStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVChargingProfileSlotsNumber": {
+      "internal_id": "A174",
+      "canonical_name": "EVChargingProfileSlotsNumber",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfilePower": {
+      "internal_id": "A175",
+      "canonical_name": "EVchargingProfilePower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfileDuration": {
+      "internal_id": "A176",
+      "canonical_name": "EVchargingProfileDuration",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ACchargeInletTemp_BLMS": {
+      "internal_id": "A177",
+      "canonical_name": "ACchargeInletTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGAvailableChargingPower_BLMS": {
+      "internal_id": "A178",
+      "canonical_name": "CHGAvailableChargingPower_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGTemp_BLMS": {
+      "internal_id": "A179",
+      "canonical_name": "CHGTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGWaterTemp_BLMS": {
+      "internal_id": "A180",
+      "canonical_name": "CHGWaterTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CHGMaxACCurrent_BLMS": {
+      "internal_id": "A182",
+      "canonical_name": "CHGMaxACCurrent_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryEnergyLevel": {
+      "internal_id": "A249",
+      "canonical_name": "HVBatteryEnergyLevel",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "UserSOC": {
+      "internal_id": "A185",
+      "canonical_name": "UserSOC",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ProgrammedChargeStatus": {
+      "internal_id": "A186",
+      "canonical_name": "ProgrammedChargeStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargingPower_BLMS": {
+      "internal_id": "A189",
+      "canonical_name": "ChargingPower_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargingAlert_v2": {
+      "internal_id": "A190",
+      "canonical_name": "ChargingAlert_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatStartOfChargeTrigger": {
+      "internal_id": "A191",
+      "canonical_name": "HVBatStartOfChargeTrigger",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargeProhibitionByRentalDisplay": {
+      "internal_id": "A192",
+      "canonical_name": "ChargeProhibitionByRentalDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargingStatusDisplay": {
+      "internal_id": "A193",
+      "canonical_name": "ChargingStatusDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "NumberOfPhasesUsed_BLMS": {
+      "internal_id": "A194",
+      "canonical_name": "NumberOfPhasesUsed_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargeRemainingTimeDisplay_V2": {
+      "internal_id": "A195",
+      "canonical_name": "ChargeRemainingTimeDisplay_V2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TimeHour": {
+      "internal_id": "A196",
+      "canonical_name": "TimeHour",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TimeMinute": {
+      "internal_id": "A197",
+      "canonical_name": "TimeMinute",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TimeWeekDay": {
+      "internal_id": "A198",
+      "canonical_name": "TimeWeekDay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVChargerStatus": {
+      "internal_id": "A199",
+      "canonical_name": "HVChargerStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2X_SOClimitationLevelState": {
+      "internal_id": "A201",
+      "canonical_name": "V2X_SOClimitationLevelState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2X_HVBat_EnergyDurabilityCounter _EVA.": {
+      "internal_id": "A202",
+      "canonical_name": "V2X_HVBat_EnergyDurabilityCounter _EVA.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2L_InstantPower": {
+      "internal_id": "A203",
+      "canonical_name": "V2L_InstantPower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2L_StartStop_Status_EVA": {
+      "internal_id": "A204",
+      "canonical_name": "V2L_StartStop_Status_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_ActivationState": {
+      "internal_id": "A205",
+      "canonical_name": "V2G_ActivationState",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSE_TargetActivePower_v2_EVA": {
+      "internal_id": "A206",
+      "canonical_name": "EVSE_TargetActivePower_v2_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSE_TargetReactivePower_v2_EVA": {
+      "internal_id": "A207",
+      "canonical_name": "EVSE_TargetReactivePower_v2_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EV_PresentActivePower_EVA": {
+      "internal_id": "A208",
+      "canonical_name": "EV_PresentActivePower_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_EVmaxDischargePower_v2_EVA": {
+      "internal_id": "A209",
+      "canonical_name": "V2G_EVmaxDischargePower_v2_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_EVminDischargePower_v2_EVA": {
+      "internal_id": "A210",
+      "canonical_name": "V2G_EVminDischargePower_v2_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2G_EVSEmaximumDischargePower_v2": {
+      "internal_id": "A211",
+      "canonical_name": "V2G_EVSEmaximumDischargePower_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2X_EVSEmaximumChargePower": {
+      "internal_id": "A212",
+      "canonical_name": "V2X_EVSEmaximumChargePower",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "V2X_HVBat_EnergyDurabilityCounter _EVA": {
+      "internal_id": "A213",
+      "canonical_name": "V2X_HVBat_EnergyDurabilityCounter _EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCcontractCertifExpiry_Month": {
+      "internal_id": "A214",
+      "canonical_name": "PnCcontractCertifExpiry_Month",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCcontractCertifExpiry_Day": {
+      "internal_id": "A215",
+      "canonical_name": "PnCcontractCertifExpiry_Day",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCcontractCertifExpiry_Year": {
+      "internal_id": "A216",
+      "canonical_name": "PnCcontractCertifExpiry_Year",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCcontractCertifValidity_Month": {
+      "internal_id": "A217",
+      "canonical_name": "PnCcontractCertifValidity_Month",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCcontractCertifValidity_Year": {
+      "internal_id": "A218",
+      "canonical_name": "PnCcontractCertifValidity_Year",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCchargeStationIdentMode": {
+      "internal_id": "A219",
+      "canonical_name": "PnCchargeStationIdentMode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PnCHEVCauthorizationReq": {
+      "internal_id": "A220",
+      "canonical_name": "PnCHEVCauthorizationReq",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CertificateInstallationStatus": {
+      "internal_id": "A221",
+      "canonical_name": "CertificateInstallationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfileSlotNumber.": {
+      "internal_id": "A222",
+      "canonical_name": "EVchargingProfileSlotNumber.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfileStatus.": {
+      "internal_id": "A223",
+      "canonical_name": "EVchargingProfileStatus.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfileDuration_v2.": {
+      "internal_id": "A224",
+      "canonical_name": "EVchargingProfileDuration_v2.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVchargingProfilePower_v2": {
+      "internal_id": "A225",
+      "canonical_name": "EVchargingProfilePower_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleSlotNumber_V2.": {
+      "internal_id": "A226",
+      "canonical_name": "EVSEscheduleSlotNumber_V2.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleDuration_V2.": {
+      "internal_id": "A227",
+      "canonical_name": "EVSEscheduleDuration_V2.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEschedulePowerAllowed_V3.": {
+      "internal_id": "A228",
+      "canonical_name": "EVSEschedulePowerAllowed_V3.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleStatus_V2": {
+      "internal_id": "A229",
+      "canonical_name": "EVSEscheduleStatus_V2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EVSEscheduleCost_V2.": {
+      "internal_id": "A230",
+      "canonical_name": "EVSEscheduleCost_V2.",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ChargingStationComType": {
+      "internal_id": "A231",
+      "canonical_name": "ChargingStationComType",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EngCoolPmpSpdMes_EVA": {
+      "internal_id": "A233",
+      "canonical_name": "EngCoolPmpSpdMes_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EngCoolPmpSpdTgt_EVA": {
+      "internal_id": "A234",
+      "canonical_name": "EngCoolPmpSpdTgt_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CoolanttankValveReq_EVA": {
+      "internal_id": "A235",
+      "canonical_name": "CoolanttankValveReq_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WcacWaterCoolTemp_EVA": {
+      "internal_id": "A236",
+      "canonical_name": "WcacWaterCoolTemp_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WcacWaterCoolPumpMes_EVA": {
+      "internal_id": "A237",
+      "canonical_name": "WcacWaterCoolPumpMes_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "WcacWaterCoolPumpTgt_EVA": {
+      "internal_id": "A238",
+      "canonical_name": "WcacWaterCoolPumpTgt_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EpwtWaterCoolPumpMes_EVA": {
+      "internal_id": "A239",
+      "canonical_name": "EpwtWaterCoolPumpMes_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HeatLoopWaterTemp": {
+      "internal_id": "A240",
+      "canonical_name": "HeatLoopWaterTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "EngineFanSpeedRequestPWM_ECM": {
+      "internal_id": "A241",
+      "canonical_name": "EngineFanSpeedRequestPWM_ECM",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HeatLoopWaterPumpRequest": {
+      "internal_id": "A242",
+      "canonical_name": "HeatLoopWaterPumpRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "GearboxPositionTarget_EVA": {
+      "internal_id": "A243",
+      "canonical_name": "GearboxPositionTarget_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ParkStatus_EVA": {
+      "internal_id": "A244",
+      "canonical_name": "ParkStatus_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "SCU_Button1_EVA": {
+      "internal_id": "A245",
+      "canonical_name": "SCU_Button1_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_hvb_soc_mmi_100ms": {
+      "internal_id": "A250",
+      "canonical_name": "Vxx_hvb_soc_mmi_100ms",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryCoolingLoopTemp": {
+      "internal_id": "A252",
+      "canonical_name": "HVBatteryCoolingLoopTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_CellOverVoltageAlert": {
+      "internal_id": "A254",
+      "canonical_name": "HVB_CellOverVoltageAlert",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_CellOverVoltageAlert_HV": {
+      "internal_id": "A255",
+      "canonical_name": "HVB_CellOverVoltageAlert_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_CellUnderVoltageAlert": {
+      "internal_id": "A257",
+      "canonical_name": "HVB_CellUnderVoltageAlert",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_CellUnderVoltageAlert_HV": {
+      "internal_id": "A258",
+      "canonical_name": "HVB_CellUnderVoltageAlert_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "AvailableEnergy_HEVC": {
+      "internal_id": "A260",
+      "canonical_name": "AvailableEnergy_HEVC",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "AvailableEnergy_v2": {
+      "internal_id": "A261",
+      "canonical_name": "AvailableEnergy_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatHealth_BLMS": {
+      "internal_id": "A263",
+      "canonical_name": "HVBatHealth_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatHealth_v2": {
+      "internal_id": "A264",
+      "canonical_name": "HVBatHealth_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Ztx_prk_mtrx : Parking history (T°Max/BSOC) ( $91D2)": {
+      "internal_id": "A266",
+      "canonical_name": "Ztx_prk_mtrx : Parking history (T°Max/BSOC) ( $91D2)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_kwh_chg : Charge Deplating Driving history (T°Max/BSOC) ($91D1)": {
+      "internal_id": "A267",
+      "canonical_name": "Zxx_kwh_chg : Charge Deplating Driving history (T°Max/BSOC) ($91D1)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_kwh_chg : Cumulated energy in charge ($9243)": {
+      "internal_id": "A268",
+      "canonical_name": "Zxx_kwh_chg : Cumulated energy in charge ($9243)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_kwh_dch_cd : Cumulated energy in discharge : CD mode ($9245)": {
+      "internal_id": "A269",
+      "canonical_name": "Zxx_kwh_dch_cd : Cumulated energy in discharge : CD mode ($9245)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_Abs_Time_Pack_saved: Absolute Time ($91C1)": {
+      "internal_id": "A270",
+      "canonical_name": "Zxx_Abs_Time_Pack_saved: Absolute Time ($91C1)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Zxx_dist_pack_mem : Battery mileage ($91CF)": {
+      "internal_id": "A271",
+      "canonical_name": "Zxx_dist_pack_mem : Battery mileage ($91CF)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Ztx_BIN : Battery Identification Number ($901B)": {
+      "internal_id": "A272",
+      "canonical_name": "Ztx_BIN : Battery Identification Number ($901B)",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatResistiveStateOfHealth": {
+      "internal_id": "A274",
+      "canonical_name": "HVBatResistiveStateOfHealth",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatSerialNumber_BLMS": {
+      "internal_id": "A276",
+      "canonical_name": "HVBatSerialNumber_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatSerialNumber": {
+      "internal_id": "A277",
+      "canonical_name": "HVBatSerialNumber",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_CellHighestVoltageID_BLMS": {
+      "internal_id": "A278",
+      "canonical_name": "BMS_CellHighestVoltageID_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_CellHighestVoltageID": {
+      "internal_id": "A279",
+      "canonical_name": "BMS_CellHighestVoltageID",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_MaxTempProbeID_BLMS": {
+      "internal_id": "A281",
+      "canonical_name": "BMS_MaxTempProbeID_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_MaxTempProbeID": {
+      "internal_id": "A282",
+      "canonical_name": "BMS_MaxTempProbeID",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_CellLowestVoltageID_BLMS": {
+      "internal_id": "A284",
+      "canonical_name": "BMS_CellLowestVoltageID_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_CellLowestVoltageID": {
+      "internal_id": "A285",
+      "canonical_name": "BMS_CellLowestVoltageID",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_MinTempProbeID_BLMS": {
+      "internal_id": "A287",
+      "canonical_name": "BMS_MinTempProbeID_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_MinTempProbeID": {
+      "internal_id": "A288",
+      "canonical_name": "BMS_MinTempProbeID",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BusbarUnscrewingAlert_HV": {
+      "internal_id": "A290",
+      "canonical_name": "BusbarUnscrewingAlert_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TiAlertDisplay_EVA": {
+      "internal_id": "A293",
+      "canonical_name": "TiAlertDisplay_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "BMS_TiAlertDisplay": {
+      "internal_id": "A294",
+      "canonical_name": "BMS_TiAlertDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CellHighestVoltage_BLMS": {
+      "internal_id": "A295",
+      "canonical_name": "CellHighestVoltage_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CellHighestVoltage": {
+      "internal_id": "A296",
+      "canonical_name": "CellHighestVoltage",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CellLowestVoltage_BLMS": {
+      "internal_id": "A298",
+      "canonical_name": "CellLowestVoltage_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CellLowestVoltage": {
+      "internal_id": "A299",
+      "canonical_name": "CellLowestVoltage",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVbatteryTemperature": {
+      "internal_id": "A301",
+      "canonical_name": "HVbatteryTemperature",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryTemp": {
+      "internal_id": "A302",
+      "canonical_name": "HVBatteryTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryTempMax_BLMS": {
+      "internal_id": "A304",
+      "canonical_name": "HVBatteryTempMax_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryTempMax": {
+      "internal_id": "A305",
+      "canonical_name": "HVBatteryTempMax",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryTempMin_BLMS": {
+      "internal_id": "A307",
+      "canonical_name": "HVBatteryTempMin_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVBatteryTempMin": {
+      "internal_id": "A308",
+      "canonical_name": "HVBatteryTempMin",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "OperatingTypeStatus": {
+      "internal_id": "A311",
+      "canonical_name": "OperatingTypeStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "OperatingTypeStatus_RCY": {
+      "internal_id": "A314",
+      "canonical_name": "OperatingTypeStatus_RCY",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TotalRecovery_LastTrip": {
+      "internal_id": "A316",
+      "canonical_name": "TotalRecovery_LastTrip",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_tot_rcv_cum_cons_last_trp_100ms": {
+      "internal_id": "A317",
+      "canonical_name": "Vxx_tot_rcv_cum_cons_last_trp_100ms",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HeatingGridCurrentRequest_EVA": {
+      "internal_id": "A318",
+      "canonical_name": "HeatingGridCurrentRequest_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "StateOfCertifiedEnergy": {
+      "internal_id": "A319",
+      "canonical_name": "StateOfCertifiedEnergy",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HVB_Cell01Voltage to HVB_Cell96Voltage": {
+      "internal_id": "A320",
+      "canonical_name": "HVB_Cell01Voltage to HVB_Cell96Voltage",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Externaltemperature": {
+      "internal_id": "A321",
+      "canonical_name": "Externaltemperature",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_env_temp_mux": {
+      "internal_id": "A322",
+      "canonical_name": "Vxx_env_temp_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "USERSOC": {
+      "internal_id": "A323",
+      "canonical_name": "USERSOC",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "USERSOC_HV": {
+      "internal_id": "A324",
+      "canonical_name": "USERSOC_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CoolingBattery_HVACmode": {
+      "internal_id": "A326",
+      "canonical_name": "CoolingBattery_HVACmode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vbx_hvb_cool_hvac_mux": {
+      "internal_id": "A327",
+      "canonical_name": "Vbx_hvb_cool_hvac_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "InputPower_AC_INV": {
+      "internal_id": "A328",
+      "canonical_name": "InputPower_AC_INV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_ac_pow_cons_mux": {
+      "internal_id": "A329",
+      "canonical_name": "Vxx_ac_pow_cons_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_thrml_cmf_pow_lim_100ms": {
+      "internal_id": "A331",
+      "canonical_name": "Vxx_thrml_cmf_pow_lim_100ms",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CumulatedBalancingTime_HV": {
+      "internal_id": "A333",
+      "canonical_name": "CumulatedBalancingTime_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "CumulatedCapacityBalanced_HV": {
+      "internal_id": "A335",
+      "canonical_name": "CumulatedCapacityBalanced_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vbx_hvb_cond_hvac_mux": {
+      "internal_id": "A340",
+      "canonical_name": "Vbx_hvb_cond_hvac_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PresoakImmediate_HVACmode": {
+      "internal_id": "A341",
+      "canonical_name": "PresoakImmediate_HVACmode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vbx_cab_imd_psoak_hvac_mux": {
+      "internal_id": "A342",
+      "canonical_name": "Vbx_cab_imd_psoak_hvac_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vbx_cab_prog_psoak_hvac_mux": {
+      "internal_id": "A344",
+      "canonical_name": "Vbx_cab_prog_psoak_hvac_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vxx_vh_tot_dist_mux": {
+      "internal_id": "A346",
+      "canonical_name": "Vxx_vh_tot_dist_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "TripUnitDistance": {
+      "internal_id": "A347",
+      "canonical_name": "TripUnitDistance",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "Vnx_dist_unit_mux": {
+      "internal_id": "A348",
+      "canonical_name": "Vnx_dist_unit_mux",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "peratingTypeStatus_BLMS": {
+      "internal_id": "A350",
+      "canonical_name": "peratingTypeStatus_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_TorqueRequest_v2": {
+      "internal_id": "A351",
+      "canonical_name": "ME_TorqueRequest_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_TorqueRequest_BLMS": {
+      "internal_id": "A352",
+      "canonical_name": "ME_TorqueRequest_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineTorque_HV": {
+      "internal_id": "A353",
+      "canonical_name": "ME_ElecMachineTorque_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineTorque_BLMS": {
+      "internal_id": "A354",
+      "canonical_name": "ME_ElecMachineTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineMaxMotorTorque_v2": {
+      "internal_id": "A355",
+      "canonical_name": "ME_ElecMachineMaxMotorTorque_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMaxMotorTorque_BLMS": {
+      "internal_id": "A356",
+      "canonical_name": "ME_ElecMaxMotorTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineMaxGenTorque": {
+      "internal_id": "A357",
+      "canonical_name": "ME_ElecMachineMaxGenTorque",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineMaxGenTorque_BLMS": {
+      "internal_id": "A358",
+      "canonical_name": "ME_ElecMachineMaxGenTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_SafetyMaxTorque_v2": {
+      "internal_id": "A359",
+      "canonical_name": "ME_SafetyMaxTorque_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_SafetyMaxTorque_BLMS": {
+      "internal_id": "A360",
+      "canonical_name": "ME_SafetyMaxTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_SafetyMinTorque_v2": {
+      "internal_id": "A361",
+      "canonical_name": "ME_SafetyMinTorque_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_SafetyMinTorque_BLMS": {
+      "internal_id": "A362",
+      "canonical_name": "ME_SafetyMinTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ElecMachineSpeed_HV": {
+      "internal_id": "A363",
+      "canonical_name": "ElecMachineSpeed_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ElecMachineSpeed_EDR": {
+      "internal_id": "A364",
+      "canonical_name": "ElecMachineSpeed_EDR",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ControlMode": {
+      "internal_id": "A365",
+      "canonical_name": "ME_ControlMode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ControlMode_EVA": {
+      "internal_id": "A366",
+      "canonical_name": "ME_ControlMode_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ControlModeStatus": {
+      "internal_id": "A367",
+      "canonical_name": "ME_ControlModeStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ControlModeStatus_EVA": {
+      "internal_id": "A368",
+      "canonical_name": "ME_ControlModeStatus_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "InverterTemp": {
+      "internal_id": "A369",
+      "canonical_name": "InverterTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterTempDeg_BLMS": {
+      "internal_id": "A370",
+      "canonical_name": "ME_InverterTempDeg_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ElecMachineTemp": {
+      "internal_id": "A373",
+      "canonical_name": "ElecMachineTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMachineTempDeg_BLMS": {
+      "internal_id": "A374",
+      "canonical_name": "ME_ElecMachineTempDeg_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PEBWaterTemp": {
+      "internal_id": "A375",
+      "canonical_name": "PEBWaterTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "PEBWaterTemp_BLMS": {
+      "internal_id": "A376",
+      "canonical_name": "PEBWaterTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ETSCoolantFlow": {
+      "internal_id": "A377",
+      "canonical_name": "ETSCoolantFlow",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ETSCoolantFlow_EVA": {
+      "internal_id": "A378",
+      "canonical_name": "ETSCoolantFlow_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_DeactivationRequest": {
+      "internal_id": "A379",
+      "canonical_name": "ME_DeactivationRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_DeactivationRequest_EVA": {
+      "internal_id": "A380",
+      "canonical_name": "ME_DeactivationRequest_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_DeactivationStatus": {
+      "internal_id": "A381",
+      "canonical_name": "ME_DeactivationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_DeactivationStatus_EVA": {
+      "internal_id": "A382",
+      "canonical_name": "ME_DeactivationStatus_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterFaultType_HV": {
+      "internal_id": "A383",
+      "canonical_name": "ME_InverterFaultType_HV",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_InverterFaultType_BLMS": {
+      "internal_id": "A384",
+      "canonical_name": "ME_InverterFaultType_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecSysFailureDisplay": {
+      "internal_id": "A385",
+      "canonical_name": "ME_ElecSysFailureDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecSysFailureDisplay_EVA": {
+      "internal_id": "A386",
+      "canonical_name": "ME_ElecSysFailureDisplay_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMotorFailureDisplay": {
+      "internal_id": "A387",
+      "canonical_name": "ME_ElecMotorFailureDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "ME_ElecMotorFailureDisplay_EVA": {
+      "internal_id": "A388",
+      "canonical_name": "ME_ElecMotorFailureDisplay_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_TorqueRequest_v2": {
+      "internal_id": "A389",
+      "canonical_name": "HSG_TorqueRequest_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_TorqueRequest_BLMS": {
+      "internal_id": "A390",
+      "canonical_name": "HSG_TorqueRequest_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineTorque": {
+      "internal_id": "A391",
+      "canonical_name": "HSG_ElecMachineTorque",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineTorque_BLMS": {
+      "internal_id": "A392",
+      "canonical_name": "HSG_ElecMachineTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineMaxMotorTorque_v3": {
+      "internal_id": "A393",
+      "canonical_name": "HSG_ElecMachineMaxMotorTorque_v3",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMaxMotorTorque_BLMS": {
+      "internal_id": "A394",
+      "canonical_name": "HSG_ElecMaxMotorTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineMaxGenTorque_v3": {
+      "internal_id": "A395",
+      "canonical_name": "HSG_ElecMachineMaxGenTorque_v3",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMaxGenTorque_BLMS": {
+      "internal_id": "A396",
+      "canonical_name": "HSG_ElecMaxGenTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_SafetyMaxTorque_v2": {
+      "internal_id": "A397",
+      "canonical_name": "HSG_SafetyMaxTorque_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_SafetyMaxTorque_BLMS": {
+      "internal_id": "A398",
+      "canonical_name": "HSG_SafetyMaxTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_SafetyMinTorque_v2": {
+      "internal_id": "A399",
+      "canonical_name": "HSG_SafetyMinTorque_v2",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_SafetyMinTorque_BLMS": {
+      "internal_id": "A400",
+      "canonical_name": "HSG_SafetyMinTorque_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineSpeed": {
+      "internal_id": "A401",
+      "canonical_name": "HSG_ElecMachineSpeed",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineSpeed_BLMS": {
+      "internal_id": "A402",
+      "canonical_name": "HSG_ElecMachineSpeed_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ControlMode": {
+      "internal_id": "A403",
+      "canonical_name": "HSG_ControlMode",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ControlMode_EVA": {
+      "internal_id": "A404",
+      "canonical_name": "HSG_ControlMode_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ControlModeStatus": {
+      "internal_id": "A405",
+      "canonical_name": "HSG_ControlModeStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ControlModeStatus_EVA": {
+      "internal_id": "A406",
+      "canonical_name": "HSG_ControlModeStatus_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterTemp": {
+      "internal_id": "A407",
+      "canonical_name": "HSG_InverterTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterTemp_BLMS": {
+      "internal_id": "A408",
+      "canonical_name": "HSG_InverterTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineTemp": {
+      "internal_id": "A411",
+      "canonical_name": "HSG_ElecMachineTemp",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMachineTemp_BLMS": {
+      "internal_id": "A412",
+      "canonical_name": "HSG_ElecMachineTemp_BLMS",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_DeactivationRequest": {
+      "internal_id": "A413",
+      "canonical_name": "HSG_DeactivationRequest",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_DeactivationRequest_EVA": {
+      "internal_id": "A414",
+      "canonical_name": "HSG_DeactivationRequest_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_DeactivationStatus": {
+      "internal_id": "A415",
+      "canonical_name": "HSG_DeactivationStatus",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_DeactivationStatus_EVA": {
+      "internal_id": "A416",
+      "canonical_name": "HSG_DeactivationStatus_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterFault_Type": {
+      "internal_id": "A417",
+      "canonical_name": "HSG_InverterFault_Type",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_InverterFault_Type_EVA": {
+      "internal_id": "A418",
+      "canonical_name": "HSG_InverterFault_Type_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecSysFailureDisplay": {
+      "internal_id": "A419",
+      "canonical_name": "HSG_ElecSysFailureDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecSysFailureDisplay_EVA": {
+      "internal_id": "A420",
+      "canonical_name": "HSG_ElecSysFailureDisplay_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMotorFailureDisplay": {
+      "internal_id": "A421",
+      "canonical_name": "HSG_ElecMotorFailureDisplay",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    },
+    "HSG_ElecMotorFailureDisplay_EVA": {
+      "internal_id": "A422",
+      "canonical_name": "HSG_ElecMotorFailureDisplay_EVA",
+      "required_for_uc": [],
+      "boolean_checks": {},
+      "sequence_conditions": {},
+      "detection_rules": []
+    }
+  },
+  "uc_definitions": {
+    "Endo-Réveil": {
+      "uc_name": "Endo-Réveil",
+      "uc_id": "endo_réveil",
+      "required_signals": [
+        "VehicleStates",
+        "PowerRelayState",
+        "HEVC_WakeUpSleepCommand",
+        "BMS2_RefusetoSleep",
+        "BMS_RefusetoSleep",
+        "DCDC_RefusetoSleep",
+        "HSG_RefusetoSleep",
+        "ME_RefuseToSleep",
+        "V_WakeUpSleepCommand",
+        "HEVC_Refuse_to_Sleep",
+        "CustomerApproachDetected",
+        "V_WakeUpSleepCommand",
+        "WakeUpType",
+        "HEVC_Refuse_to_Sleep",
+        "VehicleStates",
+        "HEVC_WakeUpSleepCommand",
+        "PowerRelayState"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "VehicleStates",
+          "conditions": {
+            "from": "CutoffPending",
+            "to1": "Sleeping"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PowerRelayState",
+          "conditions": {
+            "from": "Closed",
+            "to1": "TransitoryState",
+            "to2": "Opened"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_WakeUpSleepCommand",
+          "conditions": {
+            "from": "WakeUp",
+            "to1": "Go to Sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "BMS2_RefusetoSleep",
+          "conditions": {
+            "from": "LBC refuse to sleep",
+            "to1": "LBC ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "BMS_RefusetoSleep",
+          "conditions": {
+            "from": "LBC refuse to sleep",
+            "to1": "LBC ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "DCDC_RefusetoSleep",
+          "conditions": {
+            "from": "DCDC refuse to sleep",
+            "to1": "DCDC ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HSG_RefusetoSleep",
+          "conditions": {
+            "from": "HSG refuse to sleep",
+            "to1": "HSG ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "ME_RefuseToSleep",
+          "conditions": {
+            "from": "PEB refuse to sleep",
+            "to1": "PEB ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "V_WakeUpSleepCommand",
+          "conditions": {
+            "from": "WakeUp",
+            "to1": "Go to Sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_Refuse_to_Sleep",
+          "conditions": {
+            "from": "HEVC refuse to sleep",
+            "to1": "HEVC ready to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CustomerApproachDetected",
+          "conditions": {
+            "from": "No card identifier detected",
+            "to1": "Card identifier detected"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "V_WakeUpSleepCommand",
+          "conditions": {
+            "from": "Go to Sleep",
+            "to1": "WakeUp"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "WakeUpType",
+          "conditions": {
+            "from": "Unavailable",
+            "to1": "Full Wake-Up Mode"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_Refuse_to_Sleep",
+          "conditions": {
+            "from": "HEVC ready to sleep",
+            "to1": "HEVC refuse to sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "VehicleStates",
+          "conditions": {
+            "from": "Sleeping",
+            "to1": "Auto ACC / Ignition"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_WakeUpSleepCommand",
+          "conditions": {
+            "from": "Go to Sleep",
+            "to1": "WakeUp"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PowerRelayState",
+          "conditions": {
+            "from": "Opened",
+            "to1": "TransitoryState",
+            "to2": "Closed"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    },
+    "Traction - Roulage": {
+      "uc_name": "Traction - Roulage",
+      "uc_id": "traction___roulage",
+      "required_signals": [
+        "PushtoStartButton",
+        "BrakePedalPressedByDriver",
+        "StartingMode_BCM",
+        "VehicleStates",
+        "VehicleSpeed",
+        "10 mins window",
+        "OU",
+        "VehicleStates"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "PushtoStartButton",
+          "conditions": {
+            "from": "No Button pressed",
+            "to1": "Push to Start button is pressed",
+            "to2": "No Button pressed"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "BrakePedalPressedByDriver",
+          "conditions": {
+            "from": "Brake Pedal Pressed",
+            "to1": "Brake Pedal Pressed",
+            "to2": "Brake Pedal Not Pressed"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "StartingMode_BCM",
+          "conditions": {
+            "from": "No request",
+            "to1": "Starting Request",
+            "to2": "No request"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "VehicleStates",
+          "conditions": {
+            "from": "xxxxx",
+            "to1": "StartingInProgress",
+            "to2": "PowertrainRunning"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "VehicleSpeed",
+          "conditions": {
+            "from": "> 10Kmph"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "VehicleStates",
+          "conditions": {
+            "from": "PowertrainRunning",
+            "to1": "xxxxxxxxx"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    },
+    "CHG AC": {
+      "uc_name": "CHG AC",
+      "uc_id": "chg_ac",
+      "required_signals": [
+        "ChargingPlugConnected_v2",
+        "CHGcontrolPilotState",
+        "CHGStateRequest_v2",
+        "CHGLoadState",
+        "HVbatteryChargeType_v2",
+        "CHGLoadState",
+        "HVbatteryChargeType_v2"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "ChargingPlugConnected_v2",
+          "conditions": {
+            "from": "No display request (Charging Plug is NOT Connected)",
+            "to1": "Charging Plug is Connected"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CHGcontrolPilotState",
+          "conditions": {
+            "from": "xxxxx",
+            "to1": "State B"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CHGStateRequest_v2",
+          "conditions": {
+            "from": "Standby",
+            "to1": "PowerON",
+            "to2": "Charge"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CHGLoadState",
+          "conditions": {
+            "from": "Standby",
+            "to1": "PowerON",
+            "to2": "Charge"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HVbatteryChargeType_v2",
+          "conditions": {
+            "from": "No Charge",
+            "to1": "Normal charge"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CHGLoadState",
+          "conditions": {
+            "from": "Charge",
+            "to1": "PowerON",
+            "to2": "Standby"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HVbatteryChargeType_v2",
+          "conditions": {
+            "from": "Normal charge",
+            "to1": "No Charge"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    },
+    "Presoak Programmé": {
+      "uc_name": "Presoak Programmé",
+      "uc_id": "presoak_programmé",
+      "required_signals": [
+        "BCM_PresoakRequest",
+        "HEVC_PresoakRequest",
+        "HEVC_PresoakActivationStatus",
+        "PresoakProg_HVACmode",
+        "HEVC_PresoakActivationStatus",
+        "PresoakProg_HVACmode",
+        "AND",
+        "[",
+        "20 Mins",
+        "OR",
+        "VehicleStates",
+        "]"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "BCM_PresoakRequest",
+          "conditions": {
+            "from": "Unavailable /  Presoak Stop",
+            "to1": "Programmed Presoak Request"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_PresoakRequest",
+          "conditions": {
+            "from": "Unavailable /  Presoak Stop",
+            "to1": "Programmed Presoak Request"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_PresoakActivationStatus",
+          "conditions": {
+            "from": "No Presoak in progress",
+            "to1": "Presoak in progress"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PresoakProg_HVACmode",
+          "conditions": {
+            "from": "No Presoak Programmed",
+            "to1": "Presoak programmed in progress"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_PresoakActivationStatus",
+          "conditions": {
+            "from": "Presoak in progress",
+            "to1": "No Presoak in progress"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PresoakProg_HVACmode",
+          "conditions": {
+            "from": "Presoak programmed in progress",
+            "to1": "No Presoak Programmed"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "VehicleStates",
+          "conditions": {
+            "from": "Sleeping",
+            "to1": "=!=Sleeping"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    },
+    "Extrafeeding": {
+      "uc_name": "Extrafeeding",
+      "uc_id": "extrafeeding",
+      "required_signals": [
+        "V_WakeUpSleepCommand",
+        "WakeUpType",
+        "PowerRelayState",
+        "PowerRelayState",
+        "V_WakeUpSleepCommand",
+        "HEVC_Refuse_to_Sleep"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "V_WakeUpSleepCommand",
+          "conditions": {
+            "from": "Go to Sleep",
+            "to1": "WakeUp"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "WakeUpType",
+          "conditions": {
+            "from": "Unavailable",
+            "to1": "SelectiveMode 1",
+            "to2": "Unavailable"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PowerRelayState",
+          "conditions": {
+            "from": "Opened",
+            "to1": "TransitoryState",
+            "to2": "Closed"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "PowerRelayState",
+          "conditions": {
+            "from": "Closed",
+            "to1": "TransitoryState",
+            "to2": "Opened"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "V_WakeUpSleepCommand",
+          "conditions": {
+            "from": "WakeUp",
+            "to1": "Go to Sleep"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "HEVC_Refuse_to_Sleep",
+          "conditions": {
+            "from": "HEVC refuse to sleep",
+            "to1": "HEVC ready to sleep"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    },
+    "DC Charge and stop en EV Side": {
+      "uc_name": "DC Charge and stop en EV Side",
+      "uc_id": "dc_charge_and_stop_en_ev_side",
+      "required_signals": [
+        "ChargingPlugConnected_v2",
+        "ControlPilot_Dutycycle_EVA",
+        "CHGcontrolPilotState",
+        "In few mins",
+        "Combo_EVchargeHLCRequest_v2",
+        "Combo_EVSEchargeHLCState_v2"
+      ],
+      "sequence_rules": [
+        {
+          "signal": "ChargingPlugConnected_v2",
+          "conditions": {
+            "from": "No display request (Charging Plug is NOT Connected)",
+            "to1": "Charging Plug is Connected"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "ControlPilot_Dutycycle_EVA",
+          "conditions": {
+            "from": "4% - 8%"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "CHGcontrolPilotState",
+          "conditions": {
+            "from": "xxxxx",
+            "to1": "State B"
+          },
+          "rule_type": "state_transition"
+        },
+        {
+          "signal": "Combo_EVchargeHLCRequest_v2",
+          "conditions": {
+            "from": "Hand Shake request",
+            "to1": "Charge parameter Discovery request",
+            "to2": "Cable Check request"
+          },
+          "rule_type": "state_transition"
+        }
+      ],
+      "boolean_validation": {},
+      "detection_method": "sequence_and_boolean"
+    }
+  },
+  "boolean_rules": {
+    "B_UC_CHK_1": {
+      "rule_name": "B_UC_CHK_1",
+      "rule_type": "validation_check",
+      "column_index": 2,
+      "signal_associations": {
+        "VehicleStates": "B_Pres_5",
+        "PowerRelayState": "B_Pres_6",
+        "HEVC_WakeUpSleepCommand": "B_Pres_7",
+        "BMS2_RefusetoSleep": "B_Pres_8",
+        "BMS_RefusetoSleep": "B_Pres_10",
+        "DCDC_RefusetoSleep": "B_Pres_12",
+        "HSG_RefusetoSleep": "B_Pres_13",
+        "ME_RefuseToSleep": "B_Pres_17",
+        "V_WakeUpSleepCommand": "B_Pres_21"
+      },
+      "validation_logic": "Vérifier que tous les signaux requis sont présents et valides",
+      "description": "Vérification des conditions pour UC1 (Endo-Réveil)"
+    },
+    "B_UC_DET_1": {
+      "rule_name": "B_UC_DET_1",
+      "rule_type": "detection_flag",
+      "column_index": 6,
+      "signal_associations": {},
+      "validation_logic": "Marquer l'UC comme détecté si conditions remplies",
+      "description": "Flag de détection pour UC1 (Endo-Réveil)"
+    },
+    "B_Pres_Sig_UC": {
+      "rule_name": "B_Pres_Sig_UC",
+      "rule_type": "presence_check",
+      "column_index": 15,
+      "signal_associations": {
+        "VehicleStates": "B_Pres_108",
+        "PowerRelayState": "B_Pres_103",
+        "HEVC_WakeUpSleepCommand": "B_Pres_102",
+        "BMS2_RefusetoSleep": "B_Pres_89",
+        "BMS_RefusetoSleep": "B_Pres_90",
+        "DCDC_RefusetoSleep": "B_Pres_91",
+        "HSG_RefusetoSleep": "B_Pres_92",
+        "ME_RefuseToSleep": "B_Pres_93",
+        "V_WakeUpSleepCommand": "B_Pres_98",
+        "HEVC_Refuse_to_Sleep": "B_Pres_100",
+        "CustomerApproachDetected": "B_Pres_97",
+        "WakeUpType": "B_Pres_99",
+        "PushtoStartButton": "B_Pres_105",
+        "BrakePedalPressedByDriver": "B_Pres_106",
+        "StartingMode_BCM": "B_Pres_107",
+        "VehicleSpeed": "B_Pres_109"
+      },
+      "validation_logic": "Vérifier la présence du signal dans les données",
+      "description": "Vérification de présence des signaux UC"
+    },
+    "B_BMSNetVol_Final": {
+      "rule_name": "B_BMSNetVol_Final",
+      "rule_type": "general_boolean",
+      "column_index": 18,
+      "signal_associations": {},
+      "validation_logic": "Appliquer la règle booléenne générale",
+      "description": "Validation finale du voltage BMS"
+    },
+    "B_BMSNetV": {
+      "rule_name": "B_BMSNetV",
+      "rule_type": "general_boolean",
+      "column_index": 20,
+      "signal_associations": {},
+      "validation_logic": "Appliquer la règle booléenne générale",
+      "description": "Vérification voltage réseau BMS"
+    }
+  },
+  "detection_algorithm": {
+    "method_name": "boolean_sequence_detection",
+    "description": "Détection UC basée sur séquences et règles booléennes",
+    "steps": [
+      {
+        "step": 1,
+        "name": "signal_presence_check",
+        "description": "Vérifier la présence des signaux requis",
+        "implementation": "Utiliser les règles B_Pres_* pour valider la présence"
+      },
+      {
+        "step": 2,
+        "name": "sequence_validation",
+        "description": "Valider les transitions de séquence",
+        "implementation": "Vérifier les conditions from → to1/to2 pour chaque signal"
+      },
+      {
+        "step": 3,
+        "name": "boolean_validation",
+        "description": "Appliquer les règles de validation booléenne",
+        "implementation": "Utiliser B_UC_CHK_* pour valider les conditions UC"
+      },
+      {
+        "step": 4,
+        "name": "detection_flagging",
+        "description": "Marquer la détection UC",
+        "implementation": "Activer B_UC_DET_* si toutes conditions remplies"
+      },
+      {
+        "step": 5,
+        "name": "occurrence_counting",
+        "description": "Compter les occurrences détectées",
+        "implementation": "Incrémenter compteur pour statistiques"
+      }
+    ],
+    "validation_hierarchy": [
+      "presence_checks",
+      "sequence_conditions",
+      "boolean_validations",
+      "final_detection"
+    ]
+  },
+  "implementation_guide": {
+    "steps": [
+      "1. Initialiser UCBooleanDetector avec les configurations",
+      "2. Charger les données de signaux",
+      "3. Appeler detect_all_ucs() pour détecter tous les UC",
+      "4. Analyser les résultats de détection",
+      "5. Appliquer la validation finale"
+    ],
+    "required_libraries": [
+      "pandas",
+      "numpy"
+    ],
+    "data_format": "DataFrame avec colonnes nommées par internal_id ou signal_name"
+  }
+}
